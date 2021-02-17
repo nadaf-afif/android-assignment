@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/feeds_navigation"
+    app:startDestination="@id/feedsListFragment">
+
+    <fragment
+        android:id="@+id/feedsDetailsFragment"
+        android:name="com.android.newsfeeds.views.FeedsDetailsFragment"
+        android:label="FeedsDetailsFragment" >
+
+        <argument
+            android:name="itemId"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_feedsDetailsFragment_pop"
+            app:popUpTo="@id/feedsDetailsFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/feedsListFragment"
+        android:name="com.android.newsfeeds.views.FeedsListFragment"
+        android:label="FeedsListFragment" >
+        <action
+            android:id="@+id/nav_list_to_details_screen"
+            app:destination="@id/feedsDetailsFragment" />
+    </fragment>
+</navigation>

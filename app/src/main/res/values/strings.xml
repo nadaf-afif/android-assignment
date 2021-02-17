@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NewsFeeds</string>
+    <string name="something_went_wrong">Something went wrong.</string>
+    <string name="please_check_internet_connection">Please check your internet connection and try again.</string>
+    <string name="home_text">Home</string>
+    <string name="loading_data_text">Loading News...</string>
+    <string name="itemId">itemId</string>
+</resources>
